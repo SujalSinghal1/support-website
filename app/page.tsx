@@ -10,11 +10,11 @@ import {
   WashingMachine,
   AirVent,
   Microwave,
+  PhoneCall,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ServicesCard } from "@/components/custom/components.export";
 import {
   AC,
@@ -49,10 +49,26 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge className="mb-4 text-white bg-[#1f6feb] border-none px-6 py-2 text-base font-semibold rounded-full shadow-md">
-                24×7 Service Available
-              </Badge>
-
+              <Button
+                variant="outline"
+                className="mr-2 my-2 border-gray-200 hover:bg-blue-50 transition-all duration-300"
+              >
+                <span className="font-medium text-blue-800 dark:text-gray-200">
+                  24X7
+                </span>
+                Services
+              </Button>
+              <Link href="tel:18001021745">
+                <Button
+                  variant="outline"
+                  className="border-gray-200 hover:bg-blue-50 transition-all duration-300 hover:cursor-pointer"
+                >
+                  <PhoneCall className="h-5 w-5 text-[#1f6feb]" />
+                  <span className="font-medium text-gray-800 dark:text-gray-200">
+                    Call: 1800-102-1745
+                  </span>
+                </Button>
+              </Link>
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-[#2c3e50]">
                 Reliable Home Appliance{" "}
                 <span className="text-[#1f6feb]">Repair Experts</span>
@@ -66,7 +82,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button
                   asChild
-                  className="px-8 py-3 bg-[#1f6feb] hover:bg-[#174fb8] text-white text-lg font-medium shadow-md rounded-lg"
+                  className="px-8 py-5 bg-[#1f6feb] hover:bg-[#174fb8] text-white text-lg font-medium shadow-md rounded-lg"
                 >
                   <Link href="/support#contactus">Book Service Now</Link>
                 </Button>
