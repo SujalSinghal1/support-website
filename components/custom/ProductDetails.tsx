@@ -466,7 +466,7 @@ export default function SupportPage() {
   );
 
   return (
-    <div className="my-10 p-4 md:p-6" id="product-details">
+    <div className="my-10 p-4 md:p-6 max-md:w-full" id="product-details">
       <div className="mx-auto">
         {/* Main Content Area with Animations */}
         <AnimatePresence mode="wait">
@@ -564,7 +564,7 @@ export default function SupportPage() {
                     <Button
                       variant="outline"
                       onClick={() => navigate.push("#contactus")}
-                      className="ml-auto hidden sm:inline-flex hover:cursor-pointer"
+                      className="ml-auto hidden md:inline-flex hover:cursor-pointer"
                     >
                       Product not listed?
                     </Button>
@@ -651,6 +651,13 @@ export default function SupportPage() {
                           </Card>
                         </motion.div>
                       ))}
+                      <Button
+                        variant="outline"
+                        onClick={() => navigate.push("#contactus")}
+                        className="hidden max-md:block mx-auto my-2 hover:cursor-pointer"
+                      >
+                        Product not listed?
+                      </Button>
                     </div>
                   ) : (
                     <div className="text-center py-10">

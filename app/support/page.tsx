@@ -7,7 +7,7 @@ import { HeroSupport } from "@/components/custom/Herosection";
 
 export default function page() {
   return (
-    <div className="mx-auto px-10">
+    <div className="mx-auto px-10 max-md:px-2">
       <HeroSupport />
       <ProductDetails />
       <Details />

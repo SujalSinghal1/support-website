@@ -61,7 +61,7 @@ export default function HomePage() {
               <Link href="tel:18001021745">
                 <Button
                   variant="outline"
-                  className="border-gray-200 hover:bg-blue-50 transition-all duration-300 hover:cursor-pointer"
+                  className="border-gray-200 max-md:my-2 hover:bg-blue-50 transition-all duration-300 hover:cursor-pointer"
                 >
                   <PhoneCall className="h-5 w-5 text-[#1f6feb]" />
                   <span className="font-medium text-gray-800 dark:text-gray-200">

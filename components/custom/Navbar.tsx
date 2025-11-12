@@ -19,6 +19,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 const supportLinks = [
   {
@@ -43,13 +44,13 @@ const supportLinks = [
     title: "Privacy Policy",
     href: "/Policies/privacy-policy",
     description: "Book a service or talk to our customer care team.",
-    icon: PhoneCall,
+    icon: IoDocumentTextOutline,
   },
   {
     title: "Terms & Conditions",
     href: "/Policies/Terms-conditions",
     description: "Book a service or talk to our customer care team.",
-    icon: PhoneCall,
+    icon: IoDocumentTextOutline,
   },
 ];
 
@@ -99,7 +100,7 @@ export function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-inner animate-fadeIn">
+        <div className="md:hidden py-2 bg-white border-t border-gray-100 shadow-inner animate-fadeIn">
           <ul className="flex flex-col p-4 space-y-3 text-gray-800">
             {supportLinks.map((item) => (
               <li key={item.title}>
@@ -113,7 +114,7 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 transition-colors mx-4 mb-4 px-4 py-2 rounded-lg text-white text-sm font-medium">
+          <div className="flex items-centers justify-center gap-2 bg-blue-600 hover:bg-blue-700 transition-colors mx-4 mb-4 px-4 py-2 rounded-lg text-white text-sm font-medium">
             <Phone className="w-4 h-4" />
             <a href="tel:18001021745">1800-102-1745</a>
           </div>

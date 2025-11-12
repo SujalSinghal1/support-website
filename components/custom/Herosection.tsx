@@ -47,7 +47,7 @@ const cardVariants = {
 
 export function HeroSupport() {
   return (
-    <section className="relative py-24 md:py-32 px-6 bg-[#f0ece4] overflow-hidden">
+    <section className="relative py-24 md:py-32 px-6 bg-[#f0ece4] max-md:bg-transparent overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-br from-[#ffffff40] via-transparent to-[#cdd0c540]" />
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="max-w-3xl text-left mb-14">
